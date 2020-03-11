@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Perso</string>
+    <string name="button">Add</string>
+    <string name="itemone">one</string>
+    <string name="itemtwo">two</string>
+    <string name="itemthree">three</string>
+    <string name="selectDate">selecetdata</string>
+    <string name="formatDate">01/02/2020</string>
+    <string name="nomPrenom">Nom Prénom</string>
+    <string name="musique">musique</string>
+    <string name="theatre">theâtre</string>
+    <string name="sport">sport</string>
+    <string name="club">Club</string>
+    <string name="leval">leval</string>
+    <string name="buttong">Button</string>
+    <string name="numero">Numéro de téléphone</string>
+    <string name="num">066666666</string>
+    <string name="sms">Your SMS</string>
+    <string name="send">Send</string>
+    <string name="numero_hint">0699999999</string>
+    <string name="your_text">Your text</string>
+    <string name="buttonSend">Send</string>
+    <string-array name="level">
+        <item>L1</item>
+        <item>L2</item>
+        <item>L3</item>
+    </string-array>
+
+
+</resources>

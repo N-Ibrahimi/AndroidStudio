@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    android:orientation="vertical"
+    android:overScrollMode="ifContentScrolls"
+    android:scrollbars="horizontal"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/myBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp">
+
+        <RadioButton
+            android:id="@+id/rdDSI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/itemone" />
+
+        <RadioButton
+            android:id="@+id/rdRSI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/itemtwo" />
+
+        <RadioButton
+            android:id="@+id/rdMDW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/itemthree" />
+    </RadioGroup>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="2.5" />
+
+    <CalendarView
+        android:id="@+id/calendarView2"
+        android:layout_width="369dp"
+        android:layout_height="254dp"
+        android:accessibilityLiveRegion="polite"
+        android:layoutMode="opticalBounds" />
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:entries="@array/level">
+
+    </ListView>
+
+    <Spinner
+        android:id="@+id/sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!--android:datePickerMode="spinner"-->
+
+</LinearLayout>

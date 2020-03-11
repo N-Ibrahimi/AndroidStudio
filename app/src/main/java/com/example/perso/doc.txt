@@ -1,0 +1,57 @@
+in view we can create
+
+*TextView => textStyle = Bold|italic on peut mettre | pour avoir plusieur valeur, typeface,
+
+*EditText => comme input type = textCapCharacters, number, textEmailAddress, textUri (site), phone, date, textPassword
+pour placeholder => hint="placeholder" et en java il faut mettre setHint("palceholder");
+pour activer ou desactiver le fild on peut utiliser enabled=true/false et en java  setEnabled(true/false)
+
+*Button
+
+*CheckBox  inputype="checkbox"=> checked=true/false en java setChecked(true/false)  et pour recupérer la valeur utiliser isChecked()
+pour inverser l'état de checked utiliser toggle()
+
+*RadioButton inputtype="radio"=> radiogroup pour plusieurs radio. RadioGroup> RadioButton
+in java  => exemple dans le code
+
+*DatePicker 3 méthodes d'affichage=> datePickerMode="snipper" calanderViewShown="false" calander, Spinner, default
+startYear and endYear for ginving the period of years (just for default and snipper)
+minDate and MaxDate mm/dd/yyyy (just for default and snipper)
+calenderViewShown pour afficher ou non le calendrier (just for snipperà)
+in java for geting the date => getDateOfMonth(); getMonth(); getYear() et modifier par updateDate(int year, int month, int dayofmonth)
+
+*TimePicker => timePickerMode=> deux mode = snipper and clock
+setIs24HourView(boolean) for 24h time.
+getCurrentHour(), getCurrentMinute(), getMinute() et getHour() / setMinute() , setHour()
+
+
+*SeekBar modifier la valeur => android:max="number" in java setMax("number")
+la valeur de progress => android:progress="number" in java setProgress("number")
+get la value => getProgress()
+
+*ImageView => src="@drawable/nomimage" in java setImageResource(R.drawable.nomImage)
+
+*RatingBar the stars for giving the rate => numStars="number of stars" in java setNUmStars("number")
+getNumStars() and specify la note de l'utilisateur => android:raiting="float" in java setRaiting("float") and getRating()
+
+* Spinner propose une liste de choix
+
+*listView place les éléments en liste avec scrolling , divider="color", divider="@drawable/image" dividerHeight="unit"
+
+les méthodes pour snipper et listView
+-setSection()   définir l'élément actuellement selectionnée
+-getItemAtPosition(int pos)  recupère les données associées à la position pos
+-getCount()  renvoie le nombre d'éléments
+-getSelectedItem()  renvoie l'objet selectionné
+-getSelectedItemPosition()   renvoie l'indice de l'objet selectionné
+
+
+ArrayAdapter(collection) => methode add() and insert()
+-getItem(int pos)  return the object for that the index is given in paramèter
+-getPosition(Object o)  la position of element
+-add(Object o)  add item at the end of list
+-insert(Object o, int index )  insert a element at range in 2nd paramter
+-remove(Object o) delete a item
+-getCount() le nombre d'élément
+
+

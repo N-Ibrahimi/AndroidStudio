@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    tools:context=".Inscription">
+
+    <EditText
+        android:id="@+id/edNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/nomPrenom"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/spClasse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:entries="@array/level" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/club"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <RadioGroup
+        android:id="@+id/rdgClub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/musique"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/musique" />
+
+        <RadioButton
+            android:id="@+id/theatre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/theatre" />
+
+        <RadioButton
+            android:id="@+id/sport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sport" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/leval"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <SeekBar
+        android:id="@+id/sbNiveau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:max="3"
+        android:progress="1" />
+
+    <Button
+        android:id="@+id/btnAjouter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:theme="@style/MyButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:text="@string/button" />
+
+    <ListView
+        android:id="@+id/lvInscrir"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/he"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/nature"
+        android:text="@string/buttong" />
+</LinearLayout>
